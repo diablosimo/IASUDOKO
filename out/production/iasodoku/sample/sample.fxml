@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.text.Font?>
+
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="sample.Controller">
+   <children>
+      <AnchorPane prefHeight="178.0" prefWidth="403.0" style="-fx-background-color: #FFFFFF;">
+         <children>
+            <ImageView fitHeight="200.0" fitWidth="403.0" layoutY="43.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@resources/robots.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="68.0" layoutY="6.0" text="SODOKU SOLVER">
+               <font>
+                  <Font name="Comic Sans MS" size="31.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>
