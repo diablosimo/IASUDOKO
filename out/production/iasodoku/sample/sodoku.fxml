@@ -13,7 +13,7 @@
 
 <AnchorPane id="home" maxHeight="870.0" maxWidth="1190.0" minHeight="870.0" minWidth="1190.0" prefHeight="870.0" prefWidth="1190.0" stylesheets="@stylesheet.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <children>
-      <Label layoutX="416.0" layoutY="40.0" text="SODOKU SOLVER" textFill="WHITE">
+      <Label layoutX="416.0" layoutY="40.0" text="SUDOKU SOLVER" textFill="WHITE">
          <font>
             <Font name="Bauhaus 93" size="40.0" />
          </font>
@@ -52,407 +52,407 @@
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" fx:id="x11">
+            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" style="-fx-border-color: black; -fx-border-width: 4 1 1 4;" fx:id="x11">
                <font>
                   <Font size="33.0" />
                </font></TextField>
-            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" GridPane.columnIndex="1" fx:id="x12">
+            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" style="-fx-border-color: black; -fx-border-width: 4 1 1 1;" GridPane.columnIndex="1" fx:id="x12">
                <font>
                   <Font size="33.0" />
                </font>
             </TextField>
-            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" GridPane.columnIndex="2" fx:id="x13">
+            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" style="-fx-border-color: black; -fx-border-width: 4 4 1 1;" GridPane.columnIndex="2" fx:id="x13">
                <font>
                   <Font size="33.0" />
                </font>
             </TextField>
-            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" GridPane.columnIndex="3" fx:id="x14">
+            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" style="-fx-border-color: black; -fx-border-width: 4 1 1 4;" GridPane.columnIndex="3" fx:id="x14">
                <font>
                   <Font size="33.0" />
                </font>
             </TextField>
-            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" GridPane.columnIndex="4" fx:id="x15">
+            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" style="-fx-border-color: black; -fx-border-width: 4 1 1 1;" GridPane.columnIndex="4" fx:id="x15">
                <font>
                   <Font size="33.0" />
                </font>
             </TextField>
-            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" GridPane.columnIndex="5" fx:id="x16">
+            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" style="-fx-border-color: black; -fx-border-width: 4 4 1 1;" GridPane.columnIndex="5" fx:id="x16">
                <font>
                   <Font size="33.0" />
                </font>
             </TextField>
-            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" GridPane.columnIndex="6" fx:id="x17">
+            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" style="-fx-border-color: black; -fx-border-width: 4 1 1 4;" GridPane.columnIndex="6" fx:id="x17">
                <font>
                   <Font size="33.0" />
                </font>
             </TextField>
-            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" GridPane.columnIndex="7" fx:id="x18">
+            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" style="-fx-border-color: black; -fx-border-width: 4 1 1 1;" GridPane.columnIndex="7" fx:id="x18">
                <font>
                   <Font size="33.0" />
                </font>
             </TextField>
-            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" GridPane.columnIndex="8" fx:id="x19">
+            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" style="-fx-border-color: black; -fx-border-width: 4 4 1 1;" GridPane.columnIndex="8" fx:id="x19">
                <font>
                   <Font size="33.0" />
                </font>
             </TextField>
 
-            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" GridPane.rowIndex="1" fx:id="x21">
+            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" style="-fx-border-color: black; -fx-border-width: 1 1 1 4;" GridPane.rowIndex="1" fx:id="x21">
                <font>
                   <Font size="33.0" />
                </font>
             </TextField>
-            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" GridPane.columnIndex="1" GridPane.rowIndex="1" fx:id="x22">
+            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" style="-fx-border-color: black;" GridPane.columnIndex="1" GridPane.rowIndex="1" fx:id="x22">
                <font>
                   <Font size="33.0" />
                </font>
             </TextField>
-            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" GridPane.columnIndex="2" GridPane.rowIndex="1" fx:id="x23">
+            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" style="-fx-border-color: black; -fx-border-width: 1 4 1 1;" GridPane.columnIndex="2" GridPane.rowIndex="1" fx:id="x23">
                <font>
                   <Font size="33.0" />
                </font>
             </TextField>
-            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" GridPane.columnIndex="3" GridPane.rowIndex="1" fx:id="x24">
+            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" style="-fx-border-color: black; -fx-border-width: 1 1 1 4;" GridPane.columnIndex="3" GridPane.rowIndex="1" fx:id="x24">
                <font>
                   <Font size="33.0" />
                </font>
             </TextField>
-            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" GridPane.columnIndex="4" GridPane.rowIndex="1" fx:id="x25">
+            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" style="-fx-border-color: black;" GridPane.columnIndex="4" GridPane.rowIndex="1" fx:id="x25">
                <font>
                   <Font size="33.0" />
                </font>
             </TextField>
-            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" GridPane.columnIndex="5" GridPane.rowIndex="1" fx:id="x26">
+            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" style="-fx-border-color: black; -fx-border-width: 1 4 1 1;" GridPane.columnIndex="5" GridPane.rowIndex="1" fx:id="x26">
                <font>
                   <Font size="33.0" />
                </font>
             </TextField>
-            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" GridPane.columnIndex="6" GridPane.rowIndex="1" fx:id="x27">
+            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" style="-fx-border-color: black; -fx-border-width: 1 1 1 4;" GridPane.columnIndex="6" GridPane.rowIndex="1" fx:id="x27">
                <font>
                   <Font size="33.0" />
                </font>
             </TextField>
-            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" GridPane.columnIndex="7" GridPane.rowIndex="1" fx:id="x28">
+            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" style="-fx-border-color: black;" GridPane.columnIndex="7" GridPane.rowIndex="1" fx:id="x28">
                <font>
                   <Font size="33.0" />
                </font>
             </TextField>
-            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" GridPane.columnIndex="8" GridPane.rowIndex="1" fx:id="x29">
+            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" style="-fx-border-color: black; -fx-border-width: 1 4 1 1;" GridPane.columnIndex="8" GridPane.rowIndex="1" fx:id="x29">
                <font>
                   <Font size="33.0" />
                </font>
             </TextField>
-            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" GridPane.rowIndex="2" fx:id="x31">
+            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" style="-fx-border-color: black; -fx-border-width: 1 1 4 4;" GridPane.rowIndex="2" fx:id="x31">
                <font>
                   <Font size="33.0" />
                </font>
             </TextField>
-            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" GridPane.columnIndex="1" GridPane.rowIndex="2" fx:id="x32">
+            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" style="-fx-border-color: black; -fx-border-width: 1 1 4 1;" GridPane.columnIndex="1" GridPane.rowIndex="2" fx:id="x32">
                <font>
                   <Font size="33.0" />
                </font>
             </TextField>
-            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" GridPane.columnIndex="2" GridPane.rowIndex="2" fx:id="x33">
+            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" style="-fx-border-color: black; -fx-border-width: 1 4 4 1;" GridPane.columnIndex="2" GridPane.rowIndex="2" fx:id="x33">
                <font>
                   <Font size="33.0" />
                </font>
             </TextField>
-            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" GridPane.columnIndex="3" GridPane.rowIndex="2" fx:id="x34">
+            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" style="-fx-border-color: black; -fx-border-width: 1 1 4 4;" GridPane.columnIndex="3" GridPane.rowIndex="2" fx:id="x34">
                <font>
                   <Font size="33.0" />
                </font>
             </TextField>
-            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" GridPane.columnIndex="4" GridPane.rowIndex="2" fx:id="x35">
+            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" style="-fx-border-color: black; -fx-border-width: 1 1 4 1;" GridPane.columnIndex="4" GridPane.rowIndex="2" fx:id="x35">
                <font>
                   <Font size="33.0" />
                </font>
             </TextField>
-            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" GridPane.columnIndex="5" GridPane.rowIndex="2" fx:id="x36">
+            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" style="-fx-border-color: black; -fx-border-width: 1 4 4 1;" GridPane.columnIndex="5" GridPane.rowIndex="2" fx:id="x36">
                <font>
                   <Font size="33.0" />
                </font>
             </TextField>
-            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" GridPane.columnIndex="6" GridPane.rowIndex="2" fx:id="x37">
+            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" style="-fx-border-color: black; -fx-border-width: 1 1 4 4;" GridPane.columnIndex="6" GridPane.rowIndex="2" fx:id="x37">
                <font>
                   <Font size="33.0" />
                </font>
             </TextField>
-            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" GridPane.columnIndex="7" GridPane.rowIndex="2" fx:id="x38">
+            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" style="-fx-border-color: black; -fx-border-width: 1 1 4 1;" GridPane.columnIndex="7" GridPane.rowIndex="2" fx:id="x38">
                <font>
                   <Font size="33.0" />
                </font>
             </TextField>
-            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" GridPane.columnIndex="8" GridPane.rowIndex="2" fx:id="x39">
+            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" style="-fx-border-color: black; -fx-border-width: 1 4 4 1;" GridPane.columnIndex="8" GridPane.rowIndex="2" fx:id="x39">
                <font>
                   <Font size="33.0" />
                </font>
             </TextField>
-            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" GridPane.rowIndex="3" fx:id="x41">
+            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" style="-fx-border-color: black; -fx-border-width: 4 1 1 4;" GridPane.rowIndex="3" fx:id="x41">
                <font>
                   <Font size="33.0" />
                </font>
             </TextField>
-            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" GridPane.columnIndex="1" GridPane.rowIndex="3" fx:id="x42">
+            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" style="-fx-border-color: black; -fx-border-width: 4 1 1 1;" GridPane.columnIndex="1" GridPane.rowIndex="3" fx:id="x42">
                <font>
                   <Font size="33.0" />
                </font>
             </TextField>
-            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" GridPane.columnIndex="2" GridPane.rowIndex="3" fx:id="x43">
+            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" style="-fx-border-color: black; -fx-border-width: 4 4 1 1;" GridPane.columnIndex="2" GridPane.rowIndex="3" fx:id="x43">
                <font>
                   <Font size="33.0" />
                </font>
             </TextField>
-            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" GridPane.columnIndex="3" GridPane.rowIndex="3" fx:id="x44">
+            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" style="-fx-border-color: black; -fx-border-width: 4 1 1 4;" GridPane.columnIndex="3" GridPane.rowIndex="3" fx:id="x44">
                <font>
                   <Font size="33.0" />
                </font>
             </TextField>
-            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" GridPane.columnIndex="4" GridPane.rowIndex="3" fx:id="x45">
+            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" style="-fx-border-color: black; -fx-border-width: 4 1 1 1;" GridPane.columnIndex="4" GridPane.rowIndex="3" fx:id="x45">
                <font>
                   <Font size="33.0" />
                </font>
             </TextField>
-            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" GridPane.columnIndex="5" GridPane.rowIndex="3" fx:id="x46">
+            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" style="-fx-border-color: black; -fx-border-width: 4 4 1 1;" GridPane.columnIndex="5" GridPane.rowIndex="3" fx:id="x46">
                <font>
                   <Font size="33.0" />
                </font>
             </TextField>
-            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" GridPane.columnIndex="6" GridPane.rowIndex="3" fx:id="x47">
+            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" style="-fx-border-color: black; -fx-border-width: 4 1 1 4;" GridPane.columnIndex="6" GridPane.rowIndex="3" fx:id="x47">
                <font>
                   <Font size="33.0" />
                </font>
             </TextField>
-            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" GridPane.columnIndex="7" GridPane.rowIndex="3" fx:id="x48">
+            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" style="-fx-border-color: black; -fx-border-width: 4 1 1 1;" GridPane.columnIndex="7" GridPane.rowIndex="3" fx:id="x48">
                <font>
                   <Font size="33.0" />
                </font>
             </TextField>
-            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" GridPane.columnIndex="8" GridPane.rowIndex="3" fx:id="x49">
+            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" style="-fx-border-color: black; -fx-border-width: 4 4 1 1;" GridPane.columnIndex="8" GridPane.rowIndex="3" fx:id="x49">
                <font>
                   <Font size="33.0" />
                </font>
             </TextField>
-            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" GridPane.rowIndex="4" fx:id="x51">
+            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" style="-fx-border-color: black; -fx-border-width: 1 1 1 4;" GridPane.rowIndex="4" fx:id="x51">
                <font>
                   <Font size="33.0" />
                </font>
             </TextField>
-            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" GridPane.columnIndex="1" GridPane.rowIndex="4" fx:id="x52">
+            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" style="-fx-border-color: black;" GridPane.columnIndex="1" GridPane.rowIndex="4" fx:id="x52">
                <font>
                   <Font size="33.0" />
                </font>
             </TextField>
-            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" GridPane.columnIndex="2" GridPane.rowIndex="4" fx:id="x53">
+            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" style="-fx-border-color: black; -fx-border-width: 1 4 1 1;" GridPane.columnIndex="2" GridPane.rowIndex="4" fx:id="x53">
                <font>
                   <Font size="33.0" />
                </font>
             </TextField>
-            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" GridPane.columnIndex="3" GridPane.rowIndex="4" fx:id="x54">
+            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" style="-fx-border-color: black; -fx-border-width: 1 1 1 4;" GridPane.columnIndex="3" GridPane.rowIndex="4" fx:id="x54">
                <font>
                   <Font size="33.0" />
                </font>
             </TextField>
-            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" GridPane.columnIndex="4" GridPane.rowIndex="4" fx:id="x55">
+            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" style="-fx-border-color: black;" GridPane.columnIndex="4" GridPane.rowIndex="4" fx:id="x55">
                <font>
                   <Font size="33.0" />
                </font>
             </TextField>
-            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" GridPane.columnIndex="5" GridPane.rowIndex="4" fx:id="x56">
+            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" style="-fx-border-color: black; -fx-border-width: 1 4 1 1;" GridPane.columnIndex="5" GridPane.rowIndex="4" fx:id="x56">
                <font>
                   <Font size="33.0" />
                </font>
             </TextField>
-            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" GridPane.columnIndex="6" GridPane.rowIndex="4" fx:id="x57">
+            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" style="-fx-border-color: black; -fx-border-width: 1 1 1 4;" GridPane.columnIndex="6" GridPane.rowIndex="4" fx:id="x57">
                <font>
                   <Font size="33.0" />
                </font>
             </TextField>
-            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" GridPane.columnIndex="7" GridPane.rowIndex="4" fx:id="x58">
+            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" style="-fx-border-color: black;" GridPane.columnIndex="7" GridPane.rowIndex="4" fx:id="x58">
                <font>
                   <Font size="33.0" />
                </font>
             </TextField>
-            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" GridPane.columnIndex="8" GridPane.rowIndex="4" fx:id="x59">
+            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" style="-fx-border-color: black; -fx-border-width: 1 4 1 1;" GridPane.columnIndex="8" GridPane.rowIndex="4" fx:id="x59">
                <font>
                   <Font size="33.0" />
                </font>
             </TextField>
-            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" GridPane.rowIndex="5" fx:id="x61">
+            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" style="-fx-border-color: black; -fx-border-width: 1 1 4 4;" GridPane.rowIndex="5" fx:id="x61">
                <font>
                   <Font size="33.0" />
                </font>
             </TextField>
-            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" GridPane.columnIndex="1" GridPane.rowIndex="5" fx:id="x62">
+            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" style="-fx-border-color: black; -fx-border-width: 1 1 4 1;" GridPane.columnIndex="1" GridPane.rowIndex="5" fx:id="x62">
                <font>
                   <Font size="33.0" />
                </font>
             </TextField>
-            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" GridPane.columnIndex="2" GridPane.rowIndex="5" fx:id="x63">
+            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" style="-fx-border-color: black; -fx-border-width: 1 4 4 1;" GridPane.columnIndex="2" GridPane.rowIndex="5" fx:id="x63">
                <font>
                   <Font size="33.0" />
                </font>
             </TextField>
-            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" GridPane.columnIndex="3" GridPane.rowIndex="5" fx:id="x64">
+            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" style="-fx-border-color: black; -fx-border-width: 1 1 4 4;" GridPane.columnIndex="3" GridPane.rowIndex="5" fx:id="x64">
                <font>
                   <Font size="33.0" />
                </font>
             </TextField>
-            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" GridPane.columnIndex="4" GridPane.rowIndex="5" fx:id="x65">
+            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" style="-fx-border-color: black; -fx-border-width: 1 1 4 1;" GridPane.columnIndex="4" GridPane.rowIndex="5" fx:id="x65">
                <font>
                   <Font size="33.0" />
                </font>
             </TextField>
-            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" GridPane.columnIndex="5" GridPane.rowIndex="5" fx:id="x66">
+            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" style="-fx-border-color: black; -fx-border-width: 1 4 4 1;" GridPane.columnIndex="5" GridPane.rowIndex="5" fx:id="x66">
                <font>
                   <Font size="33.0" />
                </font>
             </TextField>
-            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" GridPane.columnIndex="6" GridPane.rowIndex="5" fx:id="x67">
+            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" style="-fx-border-color: black; -fx-border-width: 1 1 4 4;" GridPane.columnIndex="6" GridPane.rowIndex="5" fx:id="x67">
                <font>
                   <Font size="33.0" />
                </font>
             </TextField>
-            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" GridPane.columnIndex="7" GridPane.rowIndex="5" fx:id="x68">
+            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" style="-fx-border-color: black; -fx-border-width: 1 1 4 1;" GridPane.columnIndex="7" GridPane.rowIndex="5" fx:id="x68">
                <font>
                   <Font size="33.0" />
                </font>
             </TextField>
-            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" GridPane.columnIndex="8" GridPane.rowIndex="5" fx:id="x69">
+            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" style="-fx-border-color: black; -fx-border-width: 1 4 4 1;" GridPane.columnIndex="8" GridPane.rowIndex="5" fx:id="x69">
                <font>
                   <Font size="33.0" />
                </font>
             </TextField>
-            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" GridPane.rowIndex="6" fx:id="x71">
+            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" style="-fx-border-color: black; -fx-border-width: 4 1 1 4;" GridPane.rowIndex="6" fx:id="x71">
                <font>
                   <Font size="33.0" />
                </font>
             </TextField>
-            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" GridPane.columnIndex="1" GridPane.rowIndex="6" fx:id="x72">
+            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" style="-fx-border-color: black; -fx-border-width: 4 1 1 1;" GridPane.columnIndex="1" GridPane.rowIndex="6" fx:id="x72">
                <font>
                   <Font size="33.0" />
                </font>
             </TextField>
-            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" GridPane.columnIndex="2" GridPane.rowIndex="6" fx:id="x73">
+            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" style="-fx-border-color: black; -fx-border-width: 4 4 1 1;" GridPane.columnIndex="2" GridPane.rowIndex="6" fx:id="x73">
                <font>
                   <Font size="33.0" />
                </font>
             </TextField>
-            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" GridPane.columnIndex="3" GridPane.rowIndex="6" fx:id="x74">
+            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" style="-fx-border-color: black; -fx-border-width: 4 1 1 4;" GridPane.columnIndex="3" GridPane.rowIndex="6" fx:id="x74">
                <font>
                   <Font size="33.0" />
                </font>
             </TextField>
-            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" GridPane.columnIndex="4" GridPane.rowIndex="6" fx:id="x75">
+            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" style="-fx-border-color: black; -fx-border-width: 4 1 1 1;" GridPane.columnIndex="4" GridPane.rowIndex="6" fx:id="x75">
                <font>
                   <Font size="33.0" />
                </font>
             </TextField>
-            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" GridPane.columnIndex="5" GridPane.rowIndex="6" fx:id="x76">
+            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" style="-fx-border-color: black; -fx-border-width: 4 4 1 1;" GridPane.columnIndex="5" GridPane.rowIndex="6" fx:id="x76">
                <font>
                   <Font size="33.0" />
                </font>
             </TextField>
-            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" GridPane.columnIndex="6" GridPane.rowIndex="6" fx:id="x77">
+            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" style="-fx-border-color: black; -fx-border-width: 4 1 1 4;" GridPane.columnIndex="6" GridPane.rowIndex="6" fx:id="x77">
                <font>
                   <Font size="33.0" />
                </font>
             </TextField>
-            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" GridPane.columnIndex="7" GridPane.rowIndex="6" fx:id="x78">
+            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" style="-fx-border-color: black; -fx-border-width: 4 1 1 1;" GridPane.columnIndex="7" GridPane.rowIndex="6" fx:id="x78">
                <font>
                   <Font size="33.0" />
                </font>
             </TextField>
-            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" GridPane.columnIndex="8" GridPane.rowIndex="6" fx:id="x79">
+            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" style="-fx-border-color: black; -fx-border-width: 4 4 1 1;" GridPane.columnIndex="8" GridPane.rowIndex="6" fx:id="x79">
                <font>
                   <Font size="33.0" />
                </font>
             </TextField>
-            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" GridPane.rowIndex="7" fx:id="x81">
+            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" style="-fx-border-color: black; -fx-border-width: 1 1 1 4;" GridPane.rowIndex="7" fx:id="x81">
                <font>
                   <Font size="33.0" />
                </font>
             </TextField>
-            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" GridPane.columnIndex="1" GridPane.rowIndex="7" fx:id="x82">
+            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" style="-fx-border-color: black;" GridPane.columnIndex="1" GridPane.rowIndex="7" fx:id="x82">
                <font>
                   <Font size="33.0" />
                </font>
             </TextField>
-            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" GridPane.columnIndex="2" GridPane.rowIndex="7" fx:id="x83">
+            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" style="-fx-border-color: black; -fx-border-width: 1 4 1 1;" GridPane.columnIndex="2" GridPane.rowIndex="7" fx:id="x83">
                <font>
                   <Font size="33.0" />
                </font>
             </TextField>
-            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" GridPane.columnIndex="3" GridPane.rowIndex="7" fx:id="x84">
+            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" style="-fx-border-color: black; -fx-border-width: 1 1 1 4;" GridPane.columnIndex="3" GridPane.rowIndex="7" fx:id="x84">
                <font>
                   <Font size="33.0" />
                </font>
             </TextField>
-            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" GridPane.columnIndex="4" GridPane.rowIndex="7" fx:id="x85">
+            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" style="-fx-border-color: black;" GridPane.columnIndex="4" GridPane.rowIndex="7" fx:id="x85">
                <font>
                   <Font size="33.0" />
                </font>
             </TextField>
-            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" GridPane.columnIndex="5" GridPane.rowIndex="7" fx:id="x86">
+            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" style="-fx-border-color: black; -fx-border-width: 1 4 1 1;" GridPane.columnIndex="5" GridPane.rowIndex="7" fx:id="x86">
                <font>
                   <Font size="33.0" />
                </font>
             </TextField>
-            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" GridPane.columnIndex="6" GridPane.rowIndex="7" fx:id="x87">
+            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" style="-fx-border-color: black; -fx-border-width: 1 1 1 4;" GridPane.columnIndex="6" GridPane.rowIndex="7" fx:id="x87">
                <font>
                   <Font size="33.0" />
                </font>
             </TextField>
-            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" GridPane.columnIndex="7" GridPane.rowIndex="7" fx:id="x88">
+            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" style="-fx-border-color: black;" GridPane.columnIndex="7" GridPane.rowIndex="7" fx:id="x88">
                <font>
                   <Font size="33.0" />
                </font>
             </TextField>
-            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" GridPane.columnIndex="8" GridPane.rowIndex="7" fx:id="x89">
+            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" style="-fx-border-color: black; -fx-border-width: 1 4 1 1;" GridPane.columnIndex="8" GridPane.rowIndex="7" fx:id="x89">
                <font>
                   <Font size="33.0" />
                </font>
             </TextField>
-            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" GridPane.rowIndex="8" fx:id="x91">
+            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" style="-fx-border-color: black; -fx-border-width: 1 1 4 4;" GridPane.rowIndex="8" fx:id="x91">
                <font>
                   <Font size="33.0" />
                </font>
             </TextField>
-            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" GridPane.columnIndex="1" GridPane.rowIndex="8" fx:id="x92">
+            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" style="-fx-border-color: black; -fx-border-width: 1 1 4 1;" GridPane.columnIndex="1" GridPane.rowIndex="8" fx:id="x92">
                <font>
                   <Font size="33.0" />
                </font>
             </TextField>
-            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" GridPane.columnIndex="2" GridPane.rowIndex="8" fx:id="x93">
+            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" style="-fx-border-color: black; -fx-border-width: 1 4 4 1;" GridPane.columnIndex="2" GridPane.rowIndex="8" fx:id="x93">
                <font>
                   <Font size="33.0" />
                </font>
             </TextField>
-            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" GridPane.columnIndex="3" GridPane.rowIndex="8" fx:id="x94">
+            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" style="-fx-border-color: black; -fx-border-width: 1 1 4 4;" GridPane.columnIndex="3" GridPane.rowIndex="8" fx:id="x94">
                <font>
                   <Font size="33.0" />
                </font>
             </TextField>
-            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" GridPane.columnIndex="4" GridPane.rowIndex="8" fx:id="x95">
+            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" style="-fx-border-color: black; -fx-border-width: 1 1 4 1;" GridPane.columnIndex="4" GridPane.rowIndex="8" fx:id="x95">
                <font>
                   <Font size="33.0" />
                </font>
             </TextField>
-            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" GridPane.columnIndex="5" GridPane.rowIndex="8" fx:id="x96">
+            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" style="-fx-border-color: black; -fx-border-width: 1 4 4 1;" GridPane.columnIndex="5" GridPane.rowIndex="8" fx:id="x96">
                <font>
                   <Font size="33.0" />
                </font>
             </TextField>
-            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" GridPane.columnIndex="6" GridPane.rowIndex="8" fx:id="x97">
+            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" style="-fx-border-color: black; -fx-border-width: 1 1 4 4;" GridPane.columnIndex="6" GridPane.rowIndex="8" fx:id="x97">
                <font>
                   <Font size="33.0" />
                </font>
             </TextField>
-            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" GridPane.columnIndex="7" GridPane.rowIndex="8" fx:id="x98">
+            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" style="-fx-border-color: black; -fx-border-width: 1 1 4 1;" GridPane.columnIndex="7" GridPane.rowIndex="8" fx:id="x98">
                <font>
                   <Font size="33.0" />
                </font>
             </TextField>
-            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" GridPane.columnIndex="8" GridPane.rowIndex="8" fx:id="x99">
+            <TextField alignment="CENTER" prefHeight="82.0" prefWidth="90.0" style="-fx-border-color: black; -fx-border-width: 1 4 4 1;" GridPane.columnIndex="8" GridPane.rowIndex="8" fx:id="x99">
                <font>
                   <Font size="33.0" />
                </font>

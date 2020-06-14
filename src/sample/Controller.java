@@ -13,7 +13,6 @@ import java.util.List;
 import java.util.ResourceBundle;
 
 public class Controller implements Initializable {
-
     @FXML
     private TextField x11;
     @FXML
@@ -109,7 +108,6 @@ public class Controller implements Initializable {
     @FXML
     private TextField x59;
 
-
     @FXML
     private TextField x61;
     @FXML
@@ -128,7 +126,6 @@ public class Controller implements Initializable {
     private TextField x68;
     @FXML
     private TextField x69;
-
 
     @FXML
     private TextField x71;
@@ -149,7 +146,6 @@ public class Controller implements Initializable {
     @FXML
     private TextField x79;
 
-
     @FXML
     private TextField x81;
     @FXML
@@ -168,7 +164,6 @@ public class Controller implements Initializable {
     private TextField x88;
     @FXML
     private TextField x89;
-
 
     @FXML
     private TextField x91;
@@ -194,19 +189,22 @@ public class Controller implements Initializable {
 
     List<TextField> textFields;
 
-
     public void resoudre(ActionEvent actionEvent) {
         List<String> list = getListX();
+        if (!conditionNonEmptyFields(list)) {
+            Util.showAlert(Alert.AlertType.WARNING, "Sudoku", "Attention: ", "Vous devez saisir au moins remplir 17 cases.");
+            return;
+        }
         boolean resultatVerification = verifyNumbers(list);
         if (resultatVerification) {
             list = Sodoku.sodoku(list);
-            if (list==null){
-                Util.showAlert(Alert.AlertType.WARNING,"Sudoku","Attention: ","Aucune solution n'a été toruvée");
-            }else {
+            if (list == null) {
+                Util.showAlert(Alert.AlertType.WARNING, "Sudoku", "Attention: ", "Aucune solution n'a été toruvée:");
+            } else {
                 for (int i = 0; i < textFields.size(); i++) {
                     textFields.get(i).setText(list.get(i));
-                    textFields.get(i).setDisable(true);
-                    resoudre.setDisable(true);
+                    //textFields.get(i).setDisable(true);
+                    //resoudre.setDisable(true);
                 }
             }
         }
@@ -214,11 +212,12 @@ public class Controller implements Initializable {
     }
 
     public void vider(ActionEvent actionEvent) {
-        for (TextField textField:textFields
-             ) {
+        for (TextField textField : textFields
+        ) {
             textField.setText("");
-            textField.setDisable(false);
-            textField.setStyle("-fx-background-color: white");
+
+            //textField.setDisable(false);
+            //textField.setStyle(textField.getStyle()+";"+"-fx-background-color: white");
         }
         resoudre.setDisable(false);
 
@@ -231,11 +230,24 @@ public class Controller implements Initializable {
 
     private List<String> getListX() {
         List<String> list = new ArrayList<String>();
-        for (TextField textField: textFields) {
+        for (TextField textField : textFields) {
             list.add(textField.getText());
         }
         return list;
     }
+
+    private boolean conditionNonEmptyFields(List<String> list) {
+        int i = 0;
+        for (String s : list) {
+            if (s != null && !s.isEmpty()) i++;
+        }
+        if (i < 17) {
+            return false;
+        } else {
+            return true;
+        }
+    }
+
 
     private List<TextField> initTextFieldList() {
         textFields = new ArrayList<TextField>();
@@ -339,8 +351,8 @@ public class Controller implements Initializable {
             } else if (!Util.isValidNumber(list.get(i))) {
                 Util.showAlert(Alert.AlertType.ERROR, "Erreur", "Erreur d'ensertion", "L'element de la case " + (i + 1) + " n'est pas un chiffre valide . Veuillez saisir un chiffre de 1 à 9.");
                 return false;
-            }else{
-                textFields.get(i).setStyle("-fx-background-color: red");
+            } else {
+                // textFields.get(i).setStyle("-fx-background-color: red");
             }
         }
         return true;

@@ -14,26 +14,26 @@ matrice9x9([
     [_,_,_,_,_,_,_,_,_]
 ]).
 
-% La valeur d'un element de la grille doit etre comprise entre 1 et 9
+% La valeur d_un element de la grille doit etre comprise entre 1 et 9
 element_entre_1_9(Element):- Element in 1..9.
 
-% Les valeurs des elements d'une liste(ligne ou colonne) doivent etre comprises entre 1 et 9
+% Les valeurs des elements d_une liste(ligne ou colonne) doivent etre comprises entre 1 et 9
 elements_liste_entre_1_9(Liste):-maplist(element_entre_1_9(),Liste).
 
-% Les valeurs des elements d'une grille doivent etre comprises entre 1 et 9
+% Les valeurs des elements d_une grille doivent etre comprises entre 1 et 9
 elements_Matrice_entre_1_9(Matrice):-maplist(elements_liste_entre_1_9(),Matrice).
 
-% code provoque une attente illimitée: les elements d'une liste doivent
+% code provoque une attente illimitée: les elements d_une liste doivent
 % avoir des valeurs differentes
 %
 % different_dans_liste([]).
 % different_dans_liste([_,[]]).
 % different_dans_liste([H|T]):-not(member(H,T)),different_dans_liste(T).
 
-%les elements d'une liste doivent avoir des valeurs differentes
+%les elements d_une liste doivent avoir des valeurs differentes
 different_dans_liste(Liste):-all_distinct(Liste).
 
-% les elements d'e chaque ligne de matrice doivent avoir des valeurs differentes
+% les elements de chaque ligne de matrice doivent avoir des valeurs differentes
 different_dans_lignes_matrice(Matrice):-maplist(different_dans_liste(),Matrice).
 
 % inverser les ligne avec les colonnes, pour avoir une matrice composée
@@ -72,7 +72,6 @@ different_dans_blocs3x3([E1,E2,E3|Reste_liste_1],
     different_dans_blocs3x3(Reste_liste_1,Reste_liste_2,Reste_liste_3).
 
 
-
 sodoku(Matrice,Solution):-
     %fixer la forme de la matrice
     matrice9x9(Matrice),
@@ -102,39 +101,5 @@ sodoku(Matrice,Solution):-
     different_dans_blocs3x3(L4,L5,L6),
     % la 7,8,9 eme emes listes forme 3 sous matrice 3x3,
     different_dans_blocs3x3(L7,L8,L9),
-    append(Matrice,[],Solution).
-
-
-test(R):-
-    sodoku([
-[5,4,_,_,2,_,8,_,6],
-[_,1,9,_,_,7,_,_,3],
-[_,_,_,3,_,_,2,1,_],
-[9,_,_,4,_,5,_,2,_],
-[_,_,1,_,_,_,6,_,4],
-[6,_,4,_,3,2,_,8,_],
-[_,6,_,_,_,_,1,9,_],
-[4,_,2,_,_,9,_,_,5],
-[_,9,_,_,7,_,4,_,2]],R).
-
-
-test2(R):-sodoku([[_,_,_,_,_,_,_,1,_],
-[_,_,_,_,_,2,_,_,3],
-[_,_,_,4,_,_,_,_,_],
-[_,_,_,_,_,_,5,_,_],
-[4,_,1,6,_,_,_,_,_],
-[_,_,7,1,_,_,_,_,_],
-[_,5,_,_,_,_,2,_,_],
-[_,_,_,_,8,_,_,4,_],
-[_,3,_,9,1,_,_,_,_]],R).
-
-test3(R):-sodoku([
-[3,_,_,_,_,_,_,_,5],
-[9,_,4,8,6,_,_,_,_],
-[_,_,_,_,_,_,4,8,_],
-[_,_,_,1,_,_,_,3,6],
-[_,_,8,_,_,_,_,_,4],
-[_,_,_,_,_,_,1,7,_],
-[4,_,_,_,9,_,5,_,3],
-[_,6,_,_,7,_,_,_,8],
-[_,_,9,_,_,3,_,_,_]],R).
+    maplist(label(),Matrice),
+    Solution=Matrice.

@@ -2,3 +2,20 @@
     -fx-background-image: url("resources/bg.jpg");
     -fx-background-size: 100%;
 }
+
+.boder-top{
+    -fx-border-width: 4 1 1 1;
+    -fx-border-color: black;
+}
+.boder-right{
+    -fx-border-width: 1 4 1 1;
+    -fx-border-color: black;
+}
+.boder-buttom{
+    -fx-border-width: 1 1 4 1;
+    -fx-border-color: black;
+}
+.boder-left{
+    -fx-border-width: 1 1 1 4;
+    -fx-border-color: black;
+}
