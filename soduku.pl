@@ -95,7 +95,7 @@ sodoku(Matrice,Solution):-
     Matrice= [L1,L2,L3,L4,L5,L6,L7,L8,L9],
 
     %les valeurs des elements de chaque sous matrice doivent etre differents.
-    % les 3 premiers listes forme 3 sous matrice 3x3,
+    % les 3 premiers listes forment 3 sous matrice 3x3,
     different_dans_blocs3x3(L1,L2,L3),
     % la 4,5,6 eme listes forme 3 sous matrice 3x3,
     different_dans_blocs3x3(L4,L5,L6),

@@ -189,6 +189,8 @@ public class Controller implements Initializable {
 
     List<TextField> textFields;
 
+    List<Boolean> isFull = new ArrayList<>();
+
     public void resoudre(ActionEvent actionEvent) {
         List<String> list = getListX();
         if (!conditionNonEmptyFields(list)) {
@@ -203,8 +205,9 @@ public class Controller implements Initializable {
             } else {
                 for (int i = 0; i < textFields.size(); i++) {
                     textFields.get(i).setText(list.get(i));
-                    //textFields.get(i).setDisable(true);
-                    //resoudre.setDisable(true);
+                    if (isFull.get(i)){
+                        textFields.get(i).setStyle("-fx-background-color: #4f6bff");
+                    }
                 }
             }
         }
@@ -215,12 +218,10 @@ public class Controller implements Initializable {
         for (TextField textField : textFields
         ) {
             textField.setText("");
-
-            //textField.setDisable(false);
-            //textField.setStyle(textField.getStyle()+";"+"-fx-background-color: white");
+            textField.setStyle("-fx-background-color: white");
         }
         resoudre.setDisable(false);
-
+        isFull = new ArrayList<>();
     }
 
     @Override
@@ -348,11 +349,14 @@ public class Controller implements Initializable {
             if (list.get(i) == null || list.get(i).isEmpty()) {
                 list.remove(i);
                 list.add(i, "_");
+                isFull.add(false);
             } else if (!Util.isValidNumber(list.get(i))) {
                 Util.showAlert(Alert.AlertType.ERROR, "Erreur", "Erreur d'ensertion", "L'element de la case " + (i + 1) + " n'est pas un chiffre valide . Veuillez saisir un chiffre de 1 à 9.");
+                isFull = new ArrayList<>();
                 return false;
             } else {
-                // textFields.get(i).setStyle("-fx-background-color: red");
+                //textFields.get(i).setStyle("-fx-background-color: red");
+                isFull.add(true);
             }
         }
         return true;
