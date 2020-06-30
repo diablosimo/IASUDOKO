@@ -1,0 +1,19 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="iasodoku:jar2">
+    <output-path>$PROJECT_DIR$/out/artifacts/iasodoku_jar2</output-path>
+    <root id="archive" name="iasodoku.jar">
+      <element id="module-output" name="iasodoku" />
+      <element id="extracted-dir" path="C:/Program Files/Java/javafx-sdk-11.0.2/lib/javafx-swt.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="C:/Program Files/Java/javafx-sdk-11.0.2/lib/javafx.base.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="C:/Program Files/Java/javafx-sdk-11.0.2/lib/javafx.controls.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="C:/Program Files/Java/javafx-sdk-11.0.2/lib/javafx.fxml.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="C:/Program Files/Java/javafx-sdk-11.0.2/lib/javafx.graphics.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="C:/Program Files/Java/javafx-sdk-11.0.2/lib/javafx.media.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="C:/Program Files/Java/javafx-sdk-11.0.2/lib/javafx.swing.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="C:/Program Files/Java/javafx-sdk-11.0.2/lib/javafx.web.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="C:/Program Files/swipl/lib/jpl.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/OneDrive/Desktop/Bureau/controlsfx-8.40.11.jar" path-in-jar="/" />
+      <element id="file-copy" path="$PROJECT_DIR$/soduku.pl" />
+    </root>
+  </artifact>
+</component>

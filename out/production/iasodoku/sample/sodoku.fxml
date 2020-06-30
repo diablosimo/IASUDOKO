@@ -804,7 +804,10 @@
             <Font size="29.0" />
          </font>
       </Button>
-      <Label layoutX="1017.0" layoutY="822.0" text="BENMANSOUR MOHAMMED" />
-      <Label layoutX="1014.0" layoutY="839.0" text="ZARBAG MOHAMED ELMEHDI" />
+      <Label layoutX="1017.0" layoutY="806.0" text="BENMANSOUR MOHAMMED" />
+      <Label layoutX="1018.0" layoutY="823.0" text="ZARBAG MOHAMED ELMEHDI" />
+      <Label layoutX="1018.0" layoutY="754.0" text="Mme. BOURQUIA NAWAL" />
+      <Label layoutX="1017.0" layoutY="737.0" text="Encadré par:" />
+      <Label layoutX="1014.0" layoutY="789.0" text="Réalisé par: " />
    </children>
 </AnchorPane>
